@@ -18,6 +18,10 @@ function Footer() {
                 <h3>Get In Touch</h3>
                 <Link to='/menu'>Menu</Link>
             </div>
+             <div className="card">
+                <h3>Get In Touch</h3>
+                <Link to='/menu'>Menu</Link>
+            </div>
         </div>
     )
 }
