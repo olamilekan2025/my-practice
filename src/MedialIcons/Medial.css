@@ -1,0 +1,17 @@
+.medialContainer {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+    top: 200px;
+    padding: 5px;
+    background-color:rgb(0,0,0,0.3);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+

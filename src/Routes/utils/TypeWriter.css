@@ -1,0 +1,25 @@
+.type-writer-section {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color, skyblue);
+}
+
+.typewriter-container {
+  color: var(--text-color, #fff);
+  display: flex;
+  font-weight: 300;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 15px 0;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .type-writer-section {
+    min-height: 300px;
+  }
+}

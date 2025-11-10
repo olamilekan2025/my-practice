@@ -1,0 +1,123 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.our-product {
+    max-width: 1200px;
+    padding: 3rem;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 100vh;
+    
+}
+
+.our-product > .product-tittle {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    color: #000;
+}
+
+.our-product > .product-description {
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+}
+
+.our-product > .product-style-container {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 2rem;
+    padding: 1rem;
+}
+
+.our-product > .product-style-container  > a{
+    background-color: #fff;
+    height: 360px;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 0px 2px 2px whitesmoke;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* .our-product > .product-style-container  > a:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+} */
+
+.our-product > .product-style-container  > a > .productImage {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    /* position: relative; */
+    /* overflow: hidden; */
+    border-radius: 10px;
+}
+
+a  > .productImage > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+
+.our-product > .product-style-container  > a >  .productDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+     transition: all 0.3s ease-in-out;
+}
+
+.product-card  >  .productDetails > .style-name {
+    color: #000;
+    font-size: 20px;
+}
+.product-card  >  .productDetails > .style-description {
+    font-size:15px ;
+}
+
+a  >  .productDetails > .productPrice {
+    display: flex;
+    gap: 5px;
+}
+
+.book-now {
+    background-color: rgb(2, 67, 2);
+    display: flex;
+     height: 30px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+   
+}
+
+
+ /* a:hover > .productDetails > .book-now {
+    display: block;
+    transition: all 0.3s ease-in-out;
+    
+}  */
+
+
+
+
+
+
+
+
+

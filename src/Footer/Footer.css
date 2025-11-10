@@ -1,0 +1,38 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.footer {
+    max-width: 100%;
+    /* height: 100px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: black;
+    padding: 20px 20px;
+}
+
+.footer > .card {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.footer > .card > a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:896px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}

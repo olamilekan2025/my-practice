@@ -1,0 +1,47 @@
+.menu {
+  width: 100%;
+  height: auto;
+}
+
+.menu h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.menu .menu-container {
+  height: auto;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .menu-container a {
+  width: 30%;
+  height: auto;
+  background: whitesmoke;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000
+}
+
+
+.menu .menu-container .menu-items .menu-img {
+    width: 100%;
+    height: 30vh;
+}
+
+.menu .menu-container .menu-items .menu-img  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .menu-container .menu-items h2,
+.menu .menu-container .menu-items p {
+    text-align: center;
+    padding: 10px 0;
+}
