@@ -115,6 +115,7 @@ import "./Navbar.css";
 import MainBgPage from "../Component/MainBgPage";
 import { useAuth } from "../Context/authcontext";
 
+
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -209,11 +210,11 @@ function Navbar() {
 
               {isDropdownOpen && (
                 <div className="dropdown-menu" ref={dropdownRef}>
-                  <p className="email"><strong>Email:</strong> {user.email}</p>
-                  <p>
-                    <strong>Password:</strong>{" "}
-                    {"*".repeat(user.password?.length || 8)}
-                  </p>
+                  <h2 className="profile">
+                    <h2 className="name">{user.name}</h2>
+                    <p className="email"> {user.email}</p>
+                  </h2>
+
                   <button onClick={logout} className="logout-btn">
                     Log Out
                   </button>
