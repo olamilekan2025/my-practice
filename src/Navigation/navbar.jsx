@@ -114,6 +114,10 @@ import { useCart } from "../context/cartcontext";
 import "./Navbar.css";
 import MainBgPage from "../Component/MainBgPage";
 import { useAuth } from "../Context/authcontext";
+import { BsPersonFillCheck } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
+import { FaCalendarDay } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 function Navbar() {
@@ -210,10 +214,12 @@ function Navbar() {
 
               {isDropdownOpen && (
                 <div className="dropdown-menu" ref={dropdownRef}>
-                  <h2 className="profile">
-                    <h2 className="name">{user.name}</h2>
-                    <p className="email"> {user.email}</p>
-                  </h2>
+                  <div className="profile">
+                    <spans className="name"> <BsPersonFillCheck style={{color:"blue",fontSize:"18px"}} /> {user.name}</spans>
+                    <spans className="email">  <MdEmail  style={{color:"blue",fontSize:"18px"}}  /> {user.email}</spans>
+                    <Link to="/dashboard"> <FaCalendarDay style={{color:"blue",fontSize:"18px"}} /> Dashboard</Link>
+
+                  </div>
 
                   <button onClick={logout} className="logout-btn">
                     Log Out

@@ -320,20 +320,41 @@
 
 .dropdown-menu .name {
   font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+
+
+.spans {
+ 
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  gap: 5px;
 }
 
 .dropdown-menu .email {
   margin: 0.4rem 0;
-  font-size: 0.6rem;
+  font-size: 12px;
+  font-weight: 200;
   color: #333;
   display: flex;
-  flex-direction: column;
+  margin-top: 10px;
   gap: 5px;
 }
 
+.profile > a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+
 .logout-btn {
   width: 100%;
-  background: red;
+  background: blue;
   color: white;
   border: none;
   padding: 0.6rem;

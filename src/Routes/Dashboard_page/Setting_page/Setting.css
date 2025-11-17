@@ -1,0 +1,22 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+.setting {
+    width: 1071px;
+    height: 566px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+
+  
+}
+
+.setting > p {
+    color: blue;
+    font-size: 50px;
+}
