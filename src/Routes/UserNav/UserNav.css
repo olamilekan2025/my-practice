@@ -96,6 +96,7 @@
 .user-user-header .app_name {
     color: blue;
     text-shadow: 2px 2px #000;
+    cursor: pointer;
 }
 
 .user-user-header p {

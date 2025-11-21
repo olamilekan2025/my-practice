@@ -42,14 +42,21 @@ import { IoMdPersonAdd } from "react-icons/io";
 import { IoMdSettings } from "react-icons/io";
 import { IoNotifications } from "react-icons/io5";
 import { FaArrowRightToBracket } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 function UserNav() {
   const { user, logout } = useAuth();
 
+  const navigate = useNavigate ()
+
+  const handleGohome = () => {
+    navigate("/")
+  }
+
   return (
     <div className="aside">
       <div className="user-user-header">
-        <h1 className="app_name">OLA FROSH</h1>
+        <h1 onClick={handleGohome} className="app_name">OLA FROSH</h1>
         {user && (
           <p>
             <IoMdPersonAdd style={{ color: "blue", fontSize: "20px" }} />{" "}

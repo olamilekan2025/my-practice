@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { GoPlus } from "react-icons/go";
 import { GrFormSubtract } from "react-icons/gr";
+import { FaPlus } from "react-icons/fa";
 import './Faq.css'
 
 

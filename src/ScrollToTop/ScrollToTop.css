@@ -30,7 +30,7 @@
 
 .top > button:hover {
     border-radius: 50%;
-  background-color: red;
+ 
 }
 
 .top > button:hover > h6 {
