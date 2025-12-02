@@ -176,6 +176,7 @@ function Navbar() {
             { path: "/faq", label: "FAQ" },
             { path: "/menu", label: "Menu" },
             { path: "/product", label: "Product" },
+            { path: "/fetch", label: "Fetch" },
           ].map((link) => (
             <NavLink
               key={link.path}

@@ -39,7 +39,6 @@ function ShippingDetails() {
       orderDate: new Date().toISOString(),
     };
 
-    console.log("Order Details:", orderDetails);
     alert("Order placed successfully!");
 
     // Clear localStorage and state

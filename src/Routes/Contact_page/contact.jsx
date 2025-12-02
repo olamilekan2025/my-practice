@@ -77,7 +77,7 @@ function Contact() {
       resetForm();
       setModalOpen(false);
     } catch (err) {
-      console.error(err);
+      // Error handling already managed by toast notification
       toast.error("Something went wrong");
     } finally {
       setIsLoading(false);
@@ -171,3 +171,6 @@ function Contact() {
 }
 
 export default Contact;
+
+
+

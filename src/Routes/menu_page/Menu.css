@@ -1,47 +1,191 @@
-.menu {
-  width: 100%;
-  height: auto;
+/* .menu-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.menu h1 {
-  text-align: center;
-  text-transform: capitalize;
+.section-title {
+  margin: 30px 0 15px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #222;
+  border-left: 5px solid royalblue;
+  padding-left: 10px;
 }
 
-.menu .menu-container {
-  height: auto;
-  width: 100%;
-  padding: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
+.error {
+  color: red;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
-.menu .menu-container a {
-  width: 30%;
-  height: auto;
-  background: whitesmoke;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+
+.cards {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+  background-color: red;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: royalblue;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.view-more-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #000;
+  color: #fff;
+  border: none;
   cursor: pointer;
-  text-decoration: none;
-  color: #000
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.view-more-btn:hover {
+  background: #333;
 }
 
 
-.menu .menu-container .menu-items .menu-img {
+
+@media (max-width: 520px) {
+  .menu-container {
+    padding: 20px 10px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+ */
+
+
+
+ /* === CONTAINER === */
+.menu-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* === SECTION TITLES === */
+.section-title {
+  font-size: 1.8rem;
+  margin: 30px 0 15px;
+  font-weight: 700;
+  color: #222;
+  border-left: 5px solid #ff4757;
+  padding-left: 10px;
+}
+
+/* === GRID === */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+/* === CARD (Skeleton or Real Content) === */
+.card,
+.cards {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* === POST IMAGE === */
+.images {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === HEADERS & TEXT === */
+.cards h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.cards p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* === VIEW MORE BUTTON === */
+.view-more-btn {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  background: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background: #e84118;
+  transform: scale(1.05);
+}
+
+/* === ERROR MESSAGE === */
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* === RESPONSIVE SMALL SCREEN === */
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .view-more-btn {
     width: 100%;
-    height: 30vh;
+  }
 }
 
-.menu .menu-container .menu-items .menu-img  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.menu .menu-container .menu-items h2,
-.menu .menu-container .menu-items p {
-    text-align: center;
-    padding: 10px 0;
-}

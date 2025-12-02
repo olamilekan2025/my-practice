@@ -281,6 +281,7 @@ import CarsDetails from "./Routes/Cars_Details_page/carsDetails";
 import Menu from "./Routes/menu_page/menu";
 import MenuDetails from "./Routes/menu_page/MenuDetails";
 import Product from "./Routes/ProductPage/product";
+import Fetch from "./Routes/Fetch-page/fetch"
 import ProductDetails from "./Routes/ProductDetails/productDetails";
 import Cart from "./Component/cart";
 import ShippingDetails from "./Routes/ShippingDetailsPage/shippingDetails";
@@ -291,6 +292,9 @@ import ProtectedRoute from "../src/Context/protectedRoutes";
 import DashboardLayout from "./Routes/Dashboard_page/dashboard";
 import Notivication from "./Routes/Dashboard_page/Notivication_page/notivication";
 import Setting from "./Routes/Dashboard_page/Setting_page/setting";
+import All_albums from "./Routes/All_albulm/all_albums";
+import All_comments from "./Routes/All_comments/All_comments";
+import All_post from "./Routes/All_post/all_post"
 
 function AppContent() {
   const { isLoggedIn } = useAuth();
@@ -322,9 +326,14 @@ function AppContent() {
         <Route path="/menu" element={<ProtectedRoute><Menu /></ProtectedRoute>} />
         <Route path="/menu/menu/:detailsId" element={<ProtectedRoute><MenuDetails /></ProtectedRoute>} />
         <Route path="/product" element={<ProtectedRoute><Product /></ProtectedRoute>} />
+        <Route path="/fetch" element={<ProtectedRoute><Fetch /></ProtectedRoute>} />
         <Route path="/productDetails/:id" element={<ProtectedRoute><ProductDetails /></ProtectedRoute>} />
         <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
         <Route path="/shippingDetails" element={<ProtectedRoute><ShippingDetails /></ProtectedRoute>} />
+        <Route path="/all_albums" element={<ProtectedRoute><All_albums /></ProtectedRoute>} />
+        <Route path="/all_comments" element={<ProtectedRoute><All_comments /></ProtectedRoute>} />
+        <Route path="/all_post" element={<ProtectedRoute><All_post /></ProtectedRoute>} />
+
 
         {/* Dashboard (Nested) */}
         <Route
